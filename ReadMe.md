@@ -35,7 +35,7 @@ In 2019 alone there have been roughly 165 million records of credit card fraud. 
 Here is a link to the dataset : https://www.kaggle.com/mlg-ulb/creditcardfraud 
 
 
-This dataset is from Kaggle.com. 
+This dataset is from Kaggle.com. The names of the columns have been changed from their original form for privacy reasons. 
 
 ## Analysis <a name="analysis"></a>
 
@@ -49,6 +49,7 @@ Thankfully this dataset did not contain any null values. Overall this dataset wa
 
 ### Exploratory Data Analysis <a name="exploratory_analysis"></a>
 
+Here is a correlation heatmap of the differnt columns in the dataset. We can see that there is no multicollinariety. 
 
 <img width="434" alt="Screen Shot 2021-03-16 at 7 40 09 PM" src="https://user-images.githubusercontent.com/52756457/111398112-da406d00-8690-11eb-8a92-ac79fa7cb970.png">
 
@@ -63,7 +64,7 @@ Thankfully this dataset did not contain any null values. Overall this dataset wa
 
 
 ### Modeling <a name="modeling"></a>
-I took a Supervised Learning Regression approach when doing this problem. I used many different classification models such as Adaboost, XGBoost, Decision Trees, and Random Forest.
+I took a Supervised Learning Regression approach when doing this problem. I used many different classification models such as XGBoost, Decision Trees, and Random Forest.
 
 ![Alt Text](https://media.giphy.com/media/1zi2FQvx8c6jXZB9dm/giphy.gif)
 
@@ -71,8 +72,24 @@ I took a Supervised Learning Regression approach when doing this problem. I used
 
 ### Results <a name="results"></a>
 
+Here are the results from the different types of models that were ran. 
+
+Here is a random forest model. This model scored a 99.9% accuracy, 92.4% precision, and 74.4% recall.  
+
+
+<img width="424" alt="Screen Shot 2021-03-16 at 7 54 11 PM" src="https://user-images.githubusercontent.com/52756457/111398488-926e1580-8691-11eb-8cab-e05425a95d98.png">
+
+<img width="384" alt="Screen Shot 2021-03-16 at 7 25 39 PM" src="https://user-images.githubusercontent.com/52756457/111398042-a8c7a180-8690-11eb-9b7a-bb9b515af1a7.png">
+
+
+
 
 <img width="424" alt="Screen Shot 2021-03-16 at 7 52 58 PM" src="https://user-images.githubusercontent.com/52756457/111398459-82eecc80-8691-11eb-9cb1-7cc4fc2391c8.png">
+
+
+<img width="429" alt="Screen Shot 2021-03-16 at 7 53 38 PM" src="https://user-images.githubusercontent.com/52756457/111398479-8c783480-8691-11eb-8522-3d01c72f19f4.png">
+
+Here is a XGBoost Classifier model. This model scored a 99.9% accuracy, 95.2% precision, and 81.6% recall.  
 
 <img width="358" alt="Screen Shot 2021-03-16 at 7 26 34 PM" src="https://user-images.githubusercontent.com/52756457/111397699-eaa41800-868f-11eb-94a5-ff4f8829a513.png">
 
@@ -83,15 +100,12 @@ I took a Supervised Learning Regression approach when doing this problem. I used
 
 
 
-<img width="384" alt="Screen Shot 2021-03-16 at 7 25 39 PM" src="https://user-images.githubusercontent.com/52756457/111398042-a8c7a180-8690-11eb-9b7a-bb9b515af1a7.png">
 
 
 
 
 
-<img width="429" alt="Screen Shot 2021-03-16 at 7 53 38 PM" src="https://user-images.githubusercontent.com/52756457/111398479-8c783480-8691-11eb-8522-3d01c72f19f4.png">
 
-<img width="424" alt="Screen Shot 2021-03-16 at 7 54 11 PM" src="https://user-images.githubusercontent.com/52756457/111398488-926e1580-8691-11eb-8cab-e05425a95d98.png">
 
 
 
@@ -99,13 +113,14 @@ I took a Supervised Learning Regression approach when doing this problem. I used
 
 <p>Now that we have seen the results of the model, lets see how different features played a role in detecting credit card fraud.</p>
 
+### Decision Tree
 <img width="481" alt="Screen Shot 2021-03-16 at 7 26 16 PM" src="https://user-images.githubusercontent.com/52756457/111398000-89c90f80-8690-11eb-81b1-1ee6be647b5f.png">
 
 
-
+### Random Forest
 <img width="486" alt="Screen Shot 2021-03-16 at 7 25 49 PM" src="https://user-images.githubusercontent.com/52756457/111398029-a06f6680-8690-11eb-8f14-ab272639d54c.png">
 
-
+### XGBoost
 <img width="480" alt="Screen Shot 2021-03-16 at 7 26 51 PM" src="https://user-images.githubusercontent.com/52756457/111398052-b2510980-8690-11eb-9c80-ef1276915afe.png">
 
 
