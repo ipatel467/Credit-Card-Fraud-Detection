@@ -45,11 +45,11 @@ Thankfully this dataset did not contain any null values. Overall this dataset wa
 
 <img width="205" alt="Screen Shot 2021-03-16 at 7 38 26 PM" src="https://user-images.githubusercontent.com/52756457/111398207-08be4800-8691-11eb-9d84-07b8a61856ce.png">
 
-<p>We can see that when we try to see the total number of nulls in each column we get a total of 0. This means that there are 0 null values in the dataset. </p>
+<p>We can see that when we try to see the total number of nulls in each column we get a total of 0. This means that there are 0 null values in the dataset. Since the data is clean we can jump right into data preprocessing.</p>
 
 ### Exploratory Data Analysis <a name="exploratory_analysis"></a>
 
-Here is a correlation heatmap of the differnt columns in the dataset. We can see that there is no multicollinariety. 
+Here is a correlation heatmap of the differnt features in the dataset. We can see that there is no multicollinariety. 
 
 <img width="434" alt="Screen Shot 2021-03-16 at 7 40 09 PM" src="https://user-images.githubusercontent.com/52756457/111398112-da406d00-8690-11eb-8a92-ac79fa7cb970.png">
 
@@ -64,7 +64,7 @@ Here is a correlation heatmap of the differnt columns in the dataset. We can see
 
 
 ### Modeling <a name="modeling"></a>
-I took a Supervised Learning Regression approach when doing this problem. I used many different classification models such as XGBoost, Decision Trees, and Random Forest.
+I took a Supervised Learning Classification approach when doing this problem. I used many different classification models such as XGBoost, Decision Trees, and Random Forest.
 
 ![Alt Text](https://media.giphy.com/media/1zi2FQvx8c6jXZB9dm/giphy.gif)
 
@@ -72,14 +72,26 @@ I took a Supervised Learning Regression approach when doing this problem. I used
 
 ### Results <a name="results"></a>
 
-Here are the results from the different types of models that were ran. 
+It is hard to tell which type of model will perform best for the data, so it is best to create multiple different models. After creating a few different credit card detection models, now compare them to each other. 
 
-Here is a random forest model. This model scored a 99.9% accuracy, 92.4% precision, and 74.4% recall.  
+However, before jumping right into the results, we will quickly go over the modeling steps. 
 
+Here is a random forest model. 
 
 <img width="424" alt="Screen Shot 2021-03-16 at 7 54 11 PM" src="https://user-images.githubusercontent.com/52756457/111398488-926e1580-8691-11eb-8cab-e05425a95d98.png">
 
+The random forest model scored a 99.9% accuracy, 92.4% precision, and 74.4% recall.  
+
+Below is a confusion matrix of the Random Forest model. This table may seem daunting, but it is quite simple once broken down. A confusion matrix helps us indentify True Positive, True Negatives, False Positives, False Negatives. Below will a quick explaination of the postivives and negatives in refrence to our Credit Card transaction data.
+
+- True Positive: Model labels a transaction as "Fraud", and is correct.
+- False Positive: Model labels a transaction as "Fraud", and is incorrect.
+- True Negative: Model labels a transaction as "Not Fraud", and is correct.
+- False Negative :Model labels a transaction as "Fraud", and is incorrect.
+
 <img width="384" alt="Screen Shot 2021-03-16 at 7 25 39 PM" src="https://user-images.githubusercontent.com/52756457/111398042-a8c7a180-8690-11eb-9b7a-bb9b515af1a7.png">
+
+
 
 
 
