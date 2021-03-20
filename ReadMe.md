@@ -80,7 +80,7 @@ Here is a random forest model.
 
 <img width="424" alt="Screen Shot 2021-03-16 at 7 54 11 PM" src="https://user-images.githubusercontent.com/52756457/111398488-926e1580-8691-11eb-8cab-e05425a95d98.png">
 
-The random forest model scored a 99.9% accuracy, 92.4% precision, and 74.4% recall.  
+The random forest model scored a 99.9% accuracy, 92.4% precision, and 74.4% recall. 
 
 Below is a confusion matrix of the Random Forest model. This table may seem daunting, but it is quite simple once broken down. A confusion matrix helps us indentify True Positive, True Negatives, False Positives, False Negatives. Below will a quick explaination of the postivives and negatives in refrence to our Credit Card transaction data.
 
@@ -127,18 +127,22 @@ Here is a XGBoost Classifier model. This model scored a 99.9% accuracy, 95.2% pr
 
 ### Decision Tree
 <img width="481" alt="Screen Shot 2021-03-16 at 7 26 16 PM" src="https://user-images.githubusercontent.com/52756457/111398000-89c90f80-8690-11eb-81b1-1ee6be647b5f.png">
+Above are all the features included in the Decsion Tree Classifier model. Each feature is given an importance score that shows its relevant importance in helping the model reach its target answer. 
 
+
+We can see that V17 is the most important feature in the Decision Tree model by a significant amount. V14 is about 1/4th the size of V17. This is saying that V17 is almost 4x more important than V14.
 
 ### Random Forest
 <img width="486" alt="Screen Shot 2021-03-16 at 7 25 49 PM" src="https://user-images.githubusercontent.com/52756457/111398029-a06f6680-8690-11eb-8f14-ab272639d54c.png">
+The plot above shows the importance of each feature in the Random Forest model. Just by looking at it we can see that some of these are a lot more important in the Random Forest model than they were in the decision tree model.
 
+We can see that V14 has the highest importance score and V17 has the 2nd highest importance score. We can also see that the Random Forest gives importance to multiple difference features reather than giving a couple features heavy importance like in the decison tree model. 
 ### XGBoost
 <img width="480" alt="Screen Shot 2021-03-16 at 7 26 51 PM" src="https://user-images.githubusercontent.com/52756457/111398052-b2510980-8690-11eb-9c80-ef1276915afe.png">
-
-
+ Finally here are the feature importance scores for the XGBoost classifier. The XGboost model takes alot of importance from the V17 feature and the V14 feature is 2nd most important just like the decision tree model.
+ 
 <p></p>
-
-
+One interesting thing I noticed was that the feature V10 is 3rd most important for all the models tested. I am not sure why that is the case, but it is defentiely interesting to bring up. This would require more investigation into the feature V10.
 <p></p>
 
 
