@@ -86,10 +86,14 @@ The max depth parameter is the limit up to what depth every tree in the random f
 The final parameter I tuned was n_estimators. This is the number of trees that will be built before taking the maximum voting or averages of predictions. Higher number of trees gives  better performance but makes also makes the code slower.
 <img width="424" alt="Screen Shot 2021-03-16 at 7 54 11 PM" src="https://user-images.githubusercontent.com/52756457/111398488-926e1580-8691-11eb-8cab-e05425a95d98.png">
 
-
+After setting the parameters to the model the next step is to fit the model with the training data. After doing this we will use the model to get test metrics such as accuracy, precision, and recall.
 
 
 The random forest model scored a 99.9% accuracy, 92.4% precision, and 74.4% recall. 
+
+Precision is   is the number of correctly-identified members of a class divided by all the times the model predicted that class. The precision score 92.4% which means that 92.4% of the results are relevant.
+
+Recall is 74.4% which means that 74.4% of total relevant results were correctly classified by your algorithm.
 
 Below is a confusion matrix of the Random Forest model. This table may seem daunting, but it is quite simple once broken down. A confusion matrix helps us indentify True Positive, True Negatives, False Positives, False Negatives. Below will a quick explaination of the postivives and negatives in refrence to our Credit Card transaction data.
 
