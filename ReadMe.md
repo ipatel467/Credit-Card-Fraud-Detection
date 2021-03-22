@@ -49,7 +49,7 @@ Thankfully this dataset did not contain any null values. Overall this dataset wa
 
 ### Exploratory Data Analysis <a name="exploratory_analysis"></a>
 
-Here is a correlation heatmap of the differnt features in the dataset. We can see that there is no multicollinariety. 
+Here is a correlation heatmap of the different features in the dataset. We can see that there is no multicollinariety. This is overall a good thing due to multicollinariety being a problem. Multicollinearity is a problem because it undermines the statistical significance of the indpendent varibale. However, this is not a problem I will be facing today due to there being no multicollinerariyt. 
 
 <img width="434" alt="Screen Shot 2021-03-16 at 7 40 09 PM" src="https://user-images.githubusercontent.com/52756457/111398112-da406d00-8690-11eb-8a92-ac79fa7cb970.png">
 
@@ -64,7 +64,7 @@ Here is a correlation heatmap of the differnt features in the dataset. We can se
 
 
 ### Modeling <a name="modeling"></a>
-I took a Supervised Learning Classification approach when doing this problem. I used many different classification models such as XGBoost, Decision Trees, and Random Forest.
+I took a Supervised Learning Classification approach when doing this problem. I a few  different classification models such as XGBoost, Decision Trees, and Random Forest.
 
 ![Alt Text](https://media.giphy.com/media/1zi2FQvx8c6jXZB9dm/giphy.gif)
 
@@ -77,8 +77,17 @@ It is hard to tell which type of model will perform best for the data, so it is 
 However, before jumping right into the results, we will quickly go over the modeling steps. 
 
 Here is a random forest model. 
+At the top of the cell there is a %%time which will time how long it will take for the code to execute. 
 
+After doing that we will instantitate the random forest classifier and tune some parameters. We will set the criterion to entropy because it is a measure of the randomness in the information being processed. The higher the entropy, the harder it is to draw any conclusions from that information.
+
+The max depth parameter is the limit up to what depth every tree in the random forest will grow to.
+
+The final parameter I tuned was n_estimators. This is the number of trees that will be built before taking the maximum voting or averages of predictions. Higher number of trees gives  better performance but makes also makes the code slower.
 <img width="424" alt="Screen Shot 2021-03-16 at 7 54 11 PM" src="https://user-images.githubusercontent.com/52756457/111398488-926e1580-8691-11eb-8cab-e05425a95d98.png">
+
+
+
 
 The random forest model scored a 99.9% accuracy, 92.4% precision, and 74.4% recall. 
 
