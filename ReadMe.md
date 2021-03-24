@@ -105,7 +105,7 @@ Below is a confusion matrix of the Random Forest model. This table may seem daun
 <img width="384" alt="Screen Shot 2021-03-16 at 7 25 39 PM" src="https://user-images.githubusercontent.com/52756457/111398042-a8c7a180-8690-11eb-9b7a-bb9b515af1a7.png">
 
 
-
+Above is the confusion matrix of the Random Forest model. This may look a little confusing, but it is not that crazy. If we look at the 2 darker blue squares those are the True Positive and True Negative outputs. This 2 blue squares represent correct classifiying done by the model.  
 
 
 
