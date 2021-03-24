@@ -105,33 +105,36 @@ Below is a confusion matrix of the Random Forest model. This table may seem daun
 <img width="384" alt="Screen Shot 2021-03-16 at 7 25 39 PM" src="https://user-images.githubusercontent.com/52756457/111398042-a8c7a180-8690-11eb-9b7a-bb9b515af1a7.png">
 
 
-Above is the confusion matrix of the Random Forest model. This may look a little confusing, but it is not that crazy. If we look at the 2 darker blue squares those are the True Positive and True Negative outputs. This 2 blue squares represent correct classifiying done by the model.  
+Above is the confusion matrix of the Random Forest model. This may look a little confusing, but it is not that crazy. 
 
+If we look at the 2 darker blue squares those are the True Positive and True Negative outputs. These 2 blue squares represent correct classifiying done by the model. So what does this mean? This means that our true positive were label correctly 100% of the time and our True Negatives were labeled correctly 74% of the time. These are pretty good results.  
+
+The lighter squares are the False Positives and Negatives. The very light blue square on the bottom left is False Negative. The model predicted a falsoe negative 26% of the time. This means the model reported a transaction as not fraud when the tranasction is actually fraudalent. 
 
 
 <img width="424" alt="Screen Shot 2021-03-16 at 7 52 58 PM" src="https://user-images.githubusercontent.com/52756457/111398459-82eecc80-8691-11eb-9cb1-7cc4fc2391c8.png">
 
 
+
 <img width="429" alt="Screen Shot 2021-03-16 at 7 53 38 PM" src="https://user-images.githubusercontent.com/52756457/111398479-8c783480-8691-11eb-8522-3d01c72f19f4.png">
 
-Here is a XGBoost Classifier model. This model scored a 99.9% accuracy, 95.2% precision, and 81.6% recall.  
+
 
 <img width="358" alt="Screen Shot 2021-03-16 at 7 26 34 PM" src="https://user-images.githubusercontent.com/52756457/111397699-eaa41800-868f-11eb-94a5-ff4f8829a513.png">
 
+Above is the confusion matrix of the XGBoost Classifier model.
+
+If we look at the 2 darker blue squares those are the True Positive and True Negative outputs. These 2 blue squares represent correct classifiying done by the model. So what does this mean? This means that our true positive were label correctly 100% of the time and our True Negatives were labeled correctly 82% of the time. These are pretty good results.  
+
+The lighter squares are the False Positives and Negatives. The very light blue square on the bottom left is False Negative. The model predicted a falsoe negative 18% of the time. This means the model reported a transaction as not fraud when the tranasction is actually fraudalent. 
 
 <img width="360" alt="Screen Shot 2021-03-16 at 7 26 01 PM" src="https://user-images.githubusercontent.com/52756457/111398022-964d6800-8690-11eb-9169-99127b5cc2f8.png">
 
+Above is the confusion matrix of the Decision Tree Classifier model.
 
+If we look at the 2 darker blue squares those are the True Positive and True Negative outputs. These 2 blue squares represent correct classifiying done by the model. So what does this mean? This means that our true positive were label correctly 100% of the time and our True Negatives were labeled correctly 80% of the time. These are pretty good results.  
 
-
-
-
-
-
-
-
-
-
+The lighter squares are the False Positives and Negatives. The very light blue square on the bottom left is False Negative. The model predicted a falsoe negative 20% of the time. This means the model reported a transaction as not fraud when the tranasction is actually fraudalent. 
 
 
  
