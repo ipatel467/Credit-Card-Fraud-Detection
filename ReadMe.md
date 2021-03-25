@@ -95,7 +95,15 @@ Precision is   is the number of correctly-identified members of a class divided 
 
 Recall is 74.4% which means that 74.4% of total relevant results were correctly classified by your algorithm.
 
-Below is a confusion matrix of the Random Forest model. This table may seem daunting, but it is quite simple once broken down. A confusion matrix helps us indentify True Positive, True Negatives, False Positives, False Negatives. Below will a quick explaination of the postivives and negatives in refrence to our Credit Card transaction data.
+Below is a confusion matrix of the Random Forest model. This table may seem daunting, but it is quite simple once broken down. 
+
+
+![Alt Text](https://media.giphy.com/media/4JVTF9zR9BicshFAb7/giphy.gif)
+
+
+
+A confusion matrix helps us indentify True Positive, True Negatives, False Positives, False Negatives. Below will a quick explaination of the postivives and negatives in refrence to our Credit Card transaction data.
+
 
 - True Positive: Model labels a transaction as "Fraud", and is correct.
 - False Positive: Model labels a transaction as "Fraud", and is incorrect.
@@ -158,7 +166,9 @@ We can see that V14 has the highest importance score and V17 has the 2nd highest
 
 ## XGBoost
 <img width="480" alt="Screen Shot 2021-03-16 at 7 26 51 PM" src="https://user-images.githubusercontent.com/52756457/111398052-b2510980-8690-11eb-9c80-ef1276915afe.png">
- Finally here are the feature importance scores for the XGBoost classifier. The XGboost model takes alot of importance from the V17 feature and the V14 feature is 2nd most important just like the decision tree model.
+
+
+Finally here are the feature importance scores for the XGBoost classifier. The XGboost model takes alot of importance from the V17 feature and the V14 feature is 2nd most important just like the decision tree model.
  
 <p></p>
 One interesting thing I noticed was that the feature V10 is 3rd most important for all the models tested. I am not sure why that is the case, but it is defentiely interesting to bring up. This would require more investigation into the feature V10.
