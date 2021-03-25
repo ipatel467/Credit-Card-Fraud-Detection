@@ -1,16 +1,16 @@
 # Credit Card Fraud Detection
-###### by Ibrahim Patel
+## by Ibrahim Patel
 
 ![Alt Text](
 https://media.giphy.com/media/QxAcaW5HgmqYmW5QNh/giphy.gif)
 
-## Executive Summary
+# Executive Summary
 
 For this project I will mainly focus on detecting cases of fraud from a transactions dataset. The supermajority of transcations recorded are NOT fraud cases. Less than 0.2% of all transactions are recorded are identified as fraudulent. I will creating a machine learning model that will be able to detect and indentify transactions as fraudllent. 
 
 
 
-## Contents
+# Content
 1. [Introduction](#introduction)
     - [Problem Statement](#problem_statement)
     - [Dataset](#dataset)
@@ -20,26 +20,26 @@ For this project I will mainly focus on detecting cases of fraud from a transact
     - [Modeling](#modeling)
     - [Results](#results)
 
-## Introduction <a name="introduction"></a>
+# Introduction <a name="introduction"></a>
 
 
 <p></p>
 
 <p></p>
 
-### Problem Statement <a name="problem_statement"></a>
+## Problem Statement <a name="problem_statement"></a>
 
 In 2019 alone there have been roughly 165 million records of credit card fraud. This has more than doubled since the year 2017. I thought it would be interesting to create a machine learning model that could detect fraudulent transaction. 
 
-### Dataset <a name="dataset"></a>
+## Dataset <a name="dataset"></a>
 Here is a link to the dataset : https://www.kaggle.com/mlg-ulb/creditcardfraud 
 
 
 This dataset is from Kaggle.com. The names of the columns have been changed from their original form for privacy reasons. 
 
-## Analysis <a name="analysis"></a>
+# Analysis <a name="analysis"></a>
 
-### Data Cleaning <a name="data_cleaning"></a>
+## Data Cleaning <a name="data_cleaning"></a>
 
 Thankfully this dataset did not contain any null values. Overall this dataset was clean from the start so minimal cleaning had to be made. 
 
@@ -47,7 +47,7 @@ Thankfully this dataset did not contain any null values. Overall this dataset wa
 
 <p>We can see that when we try to see the total number of nulls in each column we get a total of 0. This means that there are 0 null values in the dataset. Since the data is clean we can jump right into data preprocessing.</p>
 
-### Exploratory Data Analysis <a name="exploratory_analysis"></a>
+## Exploratory Data Analysis <a name="exploratory_analysis"></a>
 
 Here is a correlation heatmap of the different features in the dataset. We can see that there is no multicollinariety. This is overall a good thing due to multicollinariety being a problem. Multicollinearity is a problem because it undermines the statistical significance of the indpendent varibale. However, this is not a problem I will be facing today due to there being no multicollinerariyt. 
 
@@ -63,14 +63,14 @@ Here is a correlation heatmap of the different features in the dataset. We can s
 
 
 
-### Modeling <a name="modeling"></a>
+## Modeling <a name="modeling"></a>
 I took a Supervised Learning Classification approach when doing this problem. I a few  different classification models such as XGBoost, Decision Trees, and Random Forest.
 
 ![Alt Text](https://media.giphy.com/media/1zi2FQvx8c6jXZB9dm/giphy.gif)
 
 
 
-### Results <a name="results"></a>
+## Results <a name="results"></a>
 
 It is hard to tell which type of model will perform best for the data, so it is best to create multiple different models. After creating a few different credit card detection models, now compare them to each other. 
 
@@ -141,19 +141,22 @@ The lighter squares are the False Positives and Negatives. The very light blue s
 
 <p>Now that we have seen the results of the model, lets see how different features played a role in detecting credit card fraud.</p>
 
-### Decision Tree
+The unforunate thing about this dataset is that the name of the features have been censored out. This is done to protect the information we have been given. However, this is still ana amazing dataset. Now we will look at the feature improtanvce. 
+
+## Decision Tree
 <img width="481" alt="Screen Shot 2021-03-16 at 7 26 16 PM" src="https://user-images.githubusercontent.com/52756457/111398000-89c90f80-8690-11eb-81b1-1ee6be647b5f.png">
 Above are all the features included in the Decsion Tree Classifier model. Each feature is given an importance score that shows its relevant importance in helping the model reach its target answer. 
 
 
 We can see that V17 is the most important feature in the Decision Tree model by a significant amount. V14 is about 1/4th the size of V17. This is saying that V17 is almost 4x more important than V14.
 
-### Random Forest
+## Random Forest
 <img width="486" alt="Screen Shot 2021-03-16 at 7 25 49 PM" src="https://user-images.githubusercontent.com/52756457/111398029-a06f6680-8690-11eb-8f14-ab272639d54c.png">
 The plot above shows the importance of each feature in the Random Forest model. Just by looking at it we can see that some of these are a lot more important in the Random Forest model than they were in the decision tree model.
 
 We can see that V14 has the highest importance score and V17 has the 2nd highest importance score. We can also see that the Random Forest gives importance to multiple difference features reather than giving a couple features heavy importance like in the decison tree model. 
-### XGBoost
+
+## XGBoost
 <img width="480" alt="Screen Shot 2021-03-16 at 7 26 51 PM" src="https://user-images.githubusercontent.com/52756457/111398052-b2510980-8690-11eb-9c80-ef1276915afe.png">
  Finally here are the feature importance scores for the XGBoost classifier. The XGboost model takes alot of importance from the V17 feature and the V14 feature is 2nd most important just like the decision tree model.
  
